@@ -22,7 +22,7 @@ const Column = ({ title, tasks }: ColumnContents) => {
       <div className="w-full h-full bg-gray-200 p-5 flex flex-col gap-y-5 items-center">
         {tasks.map((task: Task) => {
           const { taskName } = task;
-          return <Card typeOfColumn={title} task={taskName} />;
+          return <Card key={taskName} typeOfColumn={title} task={taskName} />;
         })}
       </div>
     </div>
