@@ -20,7 +20,9 @@ const Card = ({ typeOfColumn, task }: CardType) => {
             ? " bg-purple-700"
             : typeOfColumn === "inProgress"
             ? "bg-yellow-400"
-            : "bg-green-400"
+            : typeOfColumn === "done"
+            ? "bg-emerald-400"
+            : null
         }`}
       ></div>
       <div className="bg-white h-[100px] rounded-b-md flex justify-center items-center ">
