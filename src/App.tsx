@@ -17,6 +17,7 @@ const inProgressTasks: Task[] = [
 ];
 
 const doneTasks = [
+  { taskName: "take dog for a walk" },
   { taskName: "submit assignment" },
   { taskName: "complete chores" },
 ];
